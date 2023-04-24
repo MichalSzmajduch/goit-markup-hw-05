@@ -29,8 +29,10 @@
       </div>
       <nav class="nav-padding">
         <ul class="nav-box">
-          <li>
-            <a href="./index.html" class="contact header-link space-nav"
+          <li class="">
+            <a
+              href="./index.html"
+              class="contact header-link space-nav nav-active"
               >Agencja</a
             >
           </li>
@@ -77,9 +79,20 @@
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
           </h1>
 
-          <button type="button" class="button header-button button-index">
+          <button
+            type="button"
+            class="button header-button button-index"
+            data-modal-open
+          >
             Zamów usługe
           </button>
+        </div>
+        <div class="is-hidden backdrop" data-modal>
+          <div class="modal">
+            <button type="button" class="modal-btn-close" data-modal-close>
+              X
+            </button>
+          </div>
         </div>
         <ul class="index-description container">
           <li class="description-box">
@@ -136,29 +149,39 @@
         <div class="container job-container">
           <h2 class="secondary-header sec-title">Czym się zajmujemy</h2>
           <ul class="img-work">
-            <li>
+            <li class="work-box-description">
               <img
                 src="images/img.jpg"
                 alt="kodowanie"
                 width="370"
                 height="294"
               />
+
+              <figcaption class="work-description">
+                APLIKACJE KOMPUTEROWE
+              </figcaption>
             </li>
-            <li>
+            <li class="work-box-description">
               <img
                 src="images/img1.jpg"
                 alt="aplkacja moblina"
                 width="370"
                 height="294"
               />
+              <figcaption class="work-description">
+                APLIKACJE MOBILNE
+              </figcaption>
             </li>
-            <li>
+            <li class="work-box-description">
               <img
                 src="images/img2.jpg"
                 alt="estetyka"
                 width="370"
                 height="294"
               />
+              <figcaption class="work-description">
+                APLIKACJE GRAFICZNE
+              </figcaption>
             </li>
           </ul>
         </div>
@@ -405,5 +428,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
